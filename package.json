@@ -1,0 +1,16 @@
+{
+  "name": "chichester-family-newsletter-web",
+  "version": "1.0.0",
+  "description": "Hosted web mockup of the Chichester Family Newsletter (open-with-photos edition). Static HTML for Vercel.",
+  "main": "index.js",
+  "scripts": {
+    "build": "python3 scripts/decode-images.py",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vercel": "^59.23.2"
+  }
+}
