@@ -14,3 +14,9 @@ Live: https://chichester-family-newsletter.vercel.app/
 4. Keep attribution via the organiser booking links in the HTML.
 
 Fair use for a local newsletter mockup linking to the organiser.
+
+## Self-hosted images
+
+Event photos live as base64 text under `image-sources/YYYY-MM-DD/*.jpg.b64` (git-friendly).
+`python3 scripts/decode-images.py` writes the real JPEGs to `images/YYYY-MM-DD/` (run automatically on Vercel build).
+HTML must reference `/images/YYYY-MM-DD/name.jpg` only — never organiser domains.
